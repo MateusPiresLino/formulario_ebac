@@ -1,48 +1,83 @@
-*
-{
+* { 
+    /*reset*/
+    box-sizing: border-box;
+    text-decoration: none;
     margin: 0;
     padding: 0;
 }
-body 
-{
-    overflow-x: hidden;
-    overflow-y: hidden;
+
+body {
+    /*alinhamento do containers*/
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.container 
-{
+.container {
+    /*Alinhamento dos conteiners_box*/
     display: flex;
-    justify-content: center;
+    justify-content:center;
     align-items: center;
     background-color: #E2CE1A;
-    width: 1440px;
     height: 1024px;
+    width: 1440px;
 }
 
-.container_box1 
-{
+.container_box_login {
     width: 304px;
     height: 555px;
     background-color: #36320A;
-    display: flex;
+    border-radius: 16px;
 }
 
-.container_box2 
-{
+.container_box_register {
+    /*Alinhamento de Title, sub_title e Divs*/
     display: flex;
     align-items:center;
     justify-content: center;
-    flex-direction:column;
+    flex-direction: column;
     width: 944px;
     height: 555px;
     background-color: #FEFAA1;
+    border-radius: 16px;
 }
 
-div 
-{   
-    margin-top:  15px;
+.Title_Register {
+    font-family: "poppins", sans-serif;
+    font-size: 32px;
+    font-weight:800;
+}
+
+.Sub_Title_Register {
+    font-family: "poppins", sans-serif;
+    font-size: 19px;
+    font-weight: 600;
+}
+
+.register_name, .register_email, .register_senha {   
+    margin: 18px;
+}
+
+Div > input {
+    width: 480px;
+    height: 60px;
+    border-radius: 16px;
+}
+
+Div > label {
+    font-size: 23px;
+    font-family: "poppins", sans-serif;
+    font-weight: 500;
+}
+
+Div > button {
+    height: 70px;
+    width: 232px;
+    border-radius: 30px;
+    background-color: #36320A;
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    font-size: 23px;
+    color: #fff;
 }
 

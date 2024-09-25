@@ -4,17 +4,18 @@
     text-decoration: none;
     margin: 0;
     padding: 0;
+    font-family: "poppins", sans-serif;
 }
 
 body {
-    /*alinhamento do containers*/
+    /*alinhamento dos containers no body*/
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .container {
-    /*Alinhamento dos conteiners_box*/
+    /*Alinhamento do conteiner*/
     display: flex;
     justify-content:center;
     align-items: center;
@@ -23,61 +24,116 @@ body {
     width: 1440px;
 }
 
-.container_box_login {
-    width: 304px;
-    height: 555px;
-    background-color: #36320A;
-    border-radius: 16px;
-}
-
-.container_box_register {
-    /*Alinhamento de Title, sub_title e Divs*/
+.container_box {
+    /*alinhamento flexbox de conteiner_box*/
     display: flex;
     align-items:center;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-between;
     width: 944px;
     height: 555px;
     background-color: #FEFAA1;
     border-radius: 16px;
 }
 
+.container_box_login {
+    /*alinhamento flexbox do login*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 304px;
+    height: 555px;
+    background-color: #36320A;
+    border-radius: 16px;
+}
+
+.container_login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container_login > h1 {
+    font-size: 26px;
+    color: #fff;
+    font-weight: 700;
+    margin-top: 50px;
+}
+
+.container_login > h2 {
+    font-size: 20px;
+    color: #fff;
+    font-weight: 500;
+    height: 83px;
+    width: 215px;
+    margin-top: 8px;
+}
+
+.container_login > button {
+    border-color: #fff;
+    border-width: 4px;
+    border-style:solid;
+}
+
+.container_login > button:active{
+    color: #36320A;
+    background-color: #E2CE1A;
+}
+
+.container_login > a {
+    font-size: 17px;
+    color: #fff;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+.container_box_register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .Title_Register {
-    font-family: "poppins", sans-serif;
     font-size: 32px;
     font-weight:800;
 }
 
 .Sub_Title_Register {
-    font-family: "poppins", sans-serif;
     font-size: 19px;
     font-weight: 600;
 }
 
 .register_name, .register_email, .register_senha {   
     margin: 18px;
+    padding-left: 10px;
 }
 
 Div > input {
+    /*nnputs do registro*/
     width: 480px;
-    height: 60px;
+    height: 50px;
+    background-color: #E2CE1A;
+    font-size: 19px;
+    font-weight: 500;
     border-radius: 16px;
+    border-style: none; 
+    outline: none;
+    padding: 10px;
 }
 
 Div > label {
+    /*label do registro*/
     font-size: 23px;
-    font-family: "poppins", sans-serif;
     font-weight: 500;
 }
 
-Div > button {
+button {
+    /*estilização buttons login e registro*/
     height: 70px;
     width: 232px;
     border-radius: 30px;
     background-color: #36320A;
-    font-family: "poppins", sans-serif;
     font-weight: 600;
     font-size: 23px;
     color: #fff;
+    margin-top: 15px;
 }
-
